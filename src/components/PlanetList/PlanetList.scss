@@ -1,0 +1,17 @@
+@import "../style_variables";
+
+.planet-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  .planet {
+    min-width: 250px;
+    border-radius: $border-radius;
+    padding: 20px 20px;
+    margin-top: 5px;
+    border: 1px solid black;
+    text-align: center;
+  }
+}

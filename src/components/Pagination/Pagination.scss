@@ -1,0 +1,21 @@
+.pagination-container {
+  margin: 30px 0px;
+  .list-group {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    .list-group-item {
+      width: 50px;
+      border: 1px solid black;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        background-color: blue;
+      }
+    }
+  }
+}

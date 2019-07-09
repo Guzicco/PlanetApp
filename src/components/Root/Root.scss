@@ -1,0 +1,70 @@
+@import "../style_variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: $headline-heigth;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  font-size: 2em;
+  background: #cccccc;
+}
+
+.main-content-container {
+  position: relative;
+  top: $headline-heigth;
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 25% 75%;
+  grid-column-gap: 10px;
+  padding: 25px 25px 25px 25px;
+  background: #123456;
+
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: #afafaf;
+    border-radius: $border-radius;
+
+    > div {
+      margin: 25px 0;
+    }
+  }
+
+  .planets-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background: #cacaca;
+    border-radius: $border-radius;
+
+    :first-child {
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    :nth-child(2) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    :last-child {
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+}
